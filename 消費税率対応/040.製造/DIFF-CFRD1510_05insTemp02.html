@@ -1,0 +1,765 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<style>
+.AlignLeft { text-align: left; }
+.AlignCenter { text-align: center; }
+.AlignRight { text-align: right; }
+.Wrap { white-space: nowrap; }
+body { font-family: sans-serif; font-size: 11pt; }
+td { vertical-align: top; padding-left: 4px; padding-right: 4px; }
+
+tr.SectionGap td { font-size: 4px; border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionBegin td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Black; border-right: 1px solid Black; }
+tr.SectionMiddle td { border-left: none; border-top: none; border-right: 1px solid Black; }
+tr.SubsectionAll td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+tr.SubsectionEnd td { border-left: none; border-top: none; border-bottom: 1px solid Gray; border-right: 1px solid Black; }
+table.fc { border-top: 1px solid Black; border-left: 1px solid Black; width: 100%; font-family: monospace; font-size: 10pt; }
+td.TextItemInsigAdd { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigDel { color: #000000; background-color: #EFEFFF; text-decoration: line-through; }
+td.TextItemInsigDiffMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigLeftMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemInsigRightMod { color: #000000; background-color: #EFEFFF; }
+td.TextItemNum { color: #827357; background-color: #F2F2F2; }
+td.TextItemSame { color: #000000; background-color: #FFFFFF; }
+td.TextItemSigAdd { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigDel { color: #000000; background-color: #FFE3E3; text-decoration: line-through; }
+td.TextItemSigDiffMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigLeftMod { color: #000000; background-color: #FFE3E3; }
+td.TextItemSigRightMod { color: #000000; background-color: #FFE3E3; }
+.TextSegInsigDiff { color: #0000FF; }
+.TextSegReplacedDiff { color: #0000FF; font-style: italic; }
+.TextSegSigDiff { color: #FF0000; }
+.TextSegElementKeyword { font-weight: bold; }
+.TextSegElementIdentifier { }
+.TextSegElementComment { color: #786A41; }
+.TextSegElementOperator { }
+</style>
+<title>Text Compare</title>
+</head>
+<body>
+Text Compare<br/>
+Produced: 2014/03/06 10:03:37<br/>
+&nbsp; &nbsp;
+<br/>
+Mode:&nbsp; All &nbsp;
+<br/>
+Left file: D:\work\140212\修正前\CFRD1510_05insTemp02.sql &nbsp;
+<br/>
+Right file: D:\work\140212\修正後\CFRD1510_05insTemp02.sql &nbsp;
+<br/>
+<table class="fc" cellspacing="0" cellpadding="0">
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">/*******************************************************************************</span></td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">1</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">/*******************************************************************************</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">2</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* プロジェクト : NAM顧問料デイリー算出システム</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">3</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* プロジェクト : NAM顧問料デイリー算出システム</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* 機能名&nbsp; &nbsp; &nbsp;&nbsp; : 日次SS用外部委託未払計上額接続ファイル作成</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">4</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* 機能名&nbsp; &nbsp; &nbsp;&nbsp; : 日次SS用外部委託未払計上額接続ファイル作成</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; バッチ(CFRD1510.csh)用SQL</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">5</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; バッチ(CFRD1510.csh)用SQL</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SS用中間テーブル2 INSERT_SQL</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">6</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SS用中間テーブル2 INSERT_SQL</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* ファイル名&nbsp;&nbsp; : CFRD1510_05insTemp02.sql</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">7</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* ファイル名&nbsp;&nbsp; : CFRD1510_05insTemp02.sql</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">8</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* 作成日&nbsp; &nbsp; &nbsp;&nbsp; : 2009/02/28</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">9</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* 作成日&nbsp; &nbsp; &nbsp;&nbsp; : 2009/02/28</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* 作成者&nbsp; &nbsp; &nbsp;&nbsp; : SRA米原</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">10</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">* 作成者&nbsp; &nbsp; &nbsp;&nbsp; : SRA米原</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemInsigDiffMod Wrap">* 更新&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :</td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">11</td>
+<td class="TextItemInsigDiffMod Wrap">* 更新&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; :<span class="TextSegInsigDiff"> 2014-02-10 GUT高 消費税対応</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*</span></td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">12</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*******************************************************************************/</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">13</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementComment">*******************************************************************************/</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">INSERT</span> <span class="TextSegElementKeyword">INTO</span> <span class="TextSegElementIdentifier">CFR_TMP_SS02_TBL</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">14</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">INSERT</span> <span class="TextSegElementKeyword">INTO</span> <span class="TextSegElementIdentifier">CFR_TMP_SS02_TBL</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">SELECT</span> </td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">15</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementKeyword">SELECT</span> </td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAI_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">16</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAI_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_SYS_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">17</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_SYS_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_SYS_DATE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">18</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_SYS_DATE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_SYS_DATA_NO</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">19</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_SYS_DATA_NO</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_ID</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">20</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_ID</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KESSAN_KBN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">21</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KESSAN_KBN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_USR_ID</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">22</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">IN_USR_ID</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemInsigRightMod Wrap"><span class="TextSegInsigDiff">/*&nbsp; &nbsp; &nbsp;&nbsp; 2014-02-10 消費税対応 START */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">23</td>
+<td class="TextItemSigDiffMod Wrap"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">DEN_NO</span><span class="TextSegSigDiff">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSigDiffMod Wrap"><span class="TextSegInsigDiff">/**&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; DEN_NO, **/</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSigRightMod Wrap"><span class="TextSegInsigDiff">&nbsp; &nbsp; &nbsp; &nbsp; </span><span class="TextSegSigDiff">SUBSTR</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">IN_SYS_DATE</span><span class="TextSegSigDiff">,</span><span class="TextSegSigDiff">5</span><span class="TextSegSigDiff">,</span><span class="TextSegSigDiff">4</span><span class="TextSegSigDiff">)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">|</span><span class="TextSegSigDiff">|</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">TRIM</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">TO_CHAR</span><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">ROWNUM</span><span class="TextSegSigDiff">,</span><span class="TextSegSigDiff">'0009'</span><span class="TextSegSigDiff">)</span><span class="TextSegSigDiff">)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">DEN_NO</span><span class="TextSegSigDiff">,</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemInsigRightMod Wrap"><span class="TextSegInsigDiff">/*&nbsp; &nbsp; &nbsp;&nbsp; 2014-02-10 消費税対応 STOP */</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">24</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">GYO_NO</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">GYO_NO</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">25</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_KMK_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_KMK_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">26</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_HKM_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_HKM_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">27</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_BMN_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_BMN_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">28</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE1</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE1</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">29</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE2</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE2</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">30</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE3</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE3</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">31</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE4</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CODE4</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">32</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_KIN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_KIN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">33</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CUR_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CUR_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">34</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CRT_RATE_TYPE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CRT_RATE_TYPE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">35</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CRT_RATE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CRT_RATE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">36</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CUR_KIN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_CUR_KIN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">37</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_ZEI_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_ZEI_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">38</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_ZEI_KBN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_ZEI_KBN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">39</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_ZEI_KIN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_ZEI_KIN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">40</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TEKIYO1</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TEKIYO1</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">41</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TEKIYO2</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TEKIYO2</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">42</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TORI_KBN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TORI_KBN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">43</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TORI_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">DR_TORI_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">44</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_KMK_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_KMK_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">45</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_HKM_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_HKM_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">46</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_BMN_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_BMN_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">47</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE1</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE1</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">48</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE2</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE2</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">49</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE3</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE3</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">50</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE4</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CODE4</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">51</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_KIN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_KIN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">52</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CUR_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CUR_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">53</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CRT_RATE_TYPE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CRT_RATE_TYPE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">54</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CRT_RATE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CRT_RATE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">55</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CUR_KIN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_CUR_KIN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">56</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_ZEI_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_ZEI_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">57</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_ZEI_KBN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_ZEI_KBN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">58</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_ZEI_KIN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_ZEI_KIN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">59</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TEKIYO1</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TEKIYO1</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">60</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TEKIYO2</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TEKIYO2</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">61</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TORI_KBN</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TORI_KBN</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">62</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TORI_CODE</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">CR_TORI_CODE</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">63</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO1</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO1</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">64</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO2</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO2</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">65</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO3</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO3</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">66</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO4</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO4</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">67</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO5</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SWK_JYO5</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">68</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU1</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU1</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">69</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU2</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU2</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">70</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU3</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU3</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">71</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU4</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU4</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">72</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU5</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KAIKEI_KOUMOKU5</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">73</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT1</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT1</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">74</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT2</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT2</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">75</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT3</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT3</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">76</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT4</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT4</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">77</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT5</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT5</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">78</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT6</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT6</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">79</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT7</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT7</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">80</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT8</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT8</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">81</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT9</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT9</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">82</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT10</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">KANRI_COMMENT10</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">83</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_FLG_01</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_FLG_01</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">84</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AU_USR_ID_01</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AU_USR_ID_01</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">85</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_DATE_01</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_DATE_01</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">86</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_FLG_02</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_FLG_02</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">87</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AU_USR_ID_02</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AU_USR_ID_02</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">88</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_DATE_02</span><span class="TextSegElementOperator">,</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">AUS_DATE_02</span><span class="TextSegElementOperator">,</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">89</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SYO_FLG</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">92</td>
+<td class="TextItemSame Wrap">&nbsp; &nbsp; &nbsp; &nbsp; <span class="TextSegElementIdentifier">SYO_FLG</span></td>
+</tr>
+<tr class="SectionBegin">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&lt;&gt;</td>
+<td class="TextItemNum AlignRight Wrap">93</td>
+<td class="TextItemInsigRightMod Wrap"><span class="TextSegInsigDiff">/*&nbsp; &nbsp; &nbsp;&nbsp; 2014-02-10 消費税対応 START */</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">90</td>
+<td class="TextItemSigDiffMod Wrap"><span class="TextSegSigDiff">FROM</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">CFR_TMP_SS01_TBL</span></td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">94</td>
+<td class="TextItemSigDiffMod Wrap"><span class="TextSegInsigDiff">/** FROM CFR_TMP_SS01_TBL **/</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">95</td>
+<td class="TextItemSigRightMod Wrap"><span class="TextSegSigDiff">FROM</span><span class="TextSegInsigDiff"> </span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">96</td>
+<td class="TextItemSigRightMod Wrap"><span class="TextSegSigDiff">(</span><span class="TextSegSigDiff">SELECT</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">*</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">FROM</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">CFR_TMP_SS03_TBL</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">97</td>
+<td class="TextItemSigRightMod Wrap"><span class="TextSegSigDiff">ORDER</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">BY</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">98</td>
+<td class="TextItemSigRightMod Wrap"><span class="TextSegSigDiff">J_CONTRACT_NO</span><span class="TextSegSigDiff">,</span></td>
+</tr>
+<tr class="SectionMiddle">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">99</td>
+<td class="TextItemSigRightMod Wrap"><span class="TextSegSigDiff">KAIKEI_KOUMOKU4</span><span class="TextSegSigDiff">)</span><span class="TextSegInsigDiff"> </span><span class="TextSegSigDiff">CFR_TMP_SS_TBL</span></td>
+</tr>
+<tr class="SectionEnd">
+<td class="TextItemNum AlignRight Wrap">&nbsp;</td>
+<td class="TextItemSame Wrap">&nbsp;</td>
+<td class="AlignCenter Wrap">&nbsp;</td>
+<td class="TextItemNum AlignRight Wrap">100</td>
+<td class="TextItemInsigRightMod Wrap"><span class="TextSegInsigDiff">/*&nbsp; &nbsp; &nbsp;&nbsp; 2014-02-10 消費税対応 STOP */</span></td>
+</tr>
+<tr class="SectionAll">
+<td class="TextItemNum AlignRight Wrap">91</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementOperator">;</span></td>
+<td class="AlignCenter Wrap">=</td>
+<td class="TextItemNum AlignRight Wrap">101</td>
+<td class="TextItemSame Wrap"><span class="TextSegElementOperator">;</span></td>
+</tr>
+</table>
+<br/>
+</body>
+</html>

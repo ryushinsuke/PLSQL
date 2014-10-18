@@ -1,0 +1,250 @@
+### Set Environment Variable ###
+setenv ORACLE_BASE /opt/app/oracle
+setenv ORACLE_HOME $ORACLE_BASE/product/11.2.0/dbhome_1
+## 開発
+#setenv ORACLE_SID ODW02
+## 本番
+setenv ORACLE_SID cfr01
+#setenv ORA_NLS33 /opt/app/oracle/product/9.0.1/ocommon/nls/admin/data
+setenv ORA_NLS10 $ORACLE_HOME/nls/data
+setenv NLS_LANG Japanese_Japan.JA16SJIS
+setenv LANG ja_JP.PCK
+setenv LD_LIBRARY_PATH $ORACLE_HOME/lib:$ORACLE_HOME/precomp/lib:/usr/ccs/lib:/usr/dt/lib:/usr/openwin/lib:/opt/HILNGcbl/lib:/opt/HISORTlib/lib
+setenv PATH /export/home/senju/bin:/opt/SUNWspro/bin:/usr/sbin:/usr/bin:/bin:/usr/ccs/bin:/usr/ucb:/usr/openwin/bin:/etc:/opt/SUNWspro/man:$ORACLE_HOME/Apache/Apache/bin:$ORACLE_HOME/bin:/usr/local/bin:$PATH
+
+### ORACLE
+## 開発
+#setenv CFR_ORASID			ODW02
+## 本番
+setenv CFR_ORASID           cfr01
+setenv CFR_ORAUID			cfr01
+setenv CFR_ORAPWD			cfr01
+
+### ORACLE(GX__)
+setenv CFR_ORASID_GX		ODW01
+setenv CFR_ORAUID_GX		odwbat55
+setenv CFR_ORAPWD_GX		odwbat55
+
+### ORACLE(GX__) PX
+#setenv CFR_ORASID_GX         todw01
+#setenv CFR_ORAUID_GX         nam01
+#setenv CFR_ORAPWD_GX         man10
+
+## 2006.11.30 GPA
+## 開発
+#setenv CFR_GPA_SID      odwgpa
+## 本番
+setenv CFR_GPA_SID      kyk01
+setenv CFR_GPA_UID      gpa01
+setenv CFR_GPA_PWD      gpa01
+
+### ICON SERVER
+setenv CFR_ICONSRV			172.24.5.131
+setenv CFR_ICONUID			accuk
+setenv CFR_ICONPWD			ukacc
+setenv CFR_ICONTRGDIR		"/account/uk"
+setenv CFR_ICONTRGNAME		"IconDailyNav.inf"
+setenv CFR_ICONFILEDIR		"/account/uk"
+setenv CFR_ICONFILENAME		"IconDailyNav.csv"
+
+### SS SERVER							# ADD 20090228
+#setenv CFR_SSSRV			SSWPC201	# ADD 20090228 172.25.1.2
+#setenv CFR_SSUID            senju		# ADD 20090228
+#setenv CFR_SSTOFILEDIR      C:\\swk_xml	# ADD 20090228
+
+### ftu
+setenv  LCL_ID                          cfrbt1                                  # ADD 20090421
+setenv  LCL_SRV                         kodsv001                                # ADD 20090421
+setenv  CFR_SSUID                       senju                                   # ADD 20090421
+setenv  CFR_SSSRV                       172.25.1.2                              # ADD 20090421 SSWPC201
+setenv  CFR_SSTOFILEDIR         C:\\swk_xml                             # ADD 20090421
+
+### directory
+## 開発
+#setenv CFR_CFRBT01				"/export/home/cfrbt1"
+#setenv CFR_ROOTDIR				"/export/home/cfrbt1/cfr"
+## 本番
+setenv CFR_CFRBT01              "/export/home/cfrbt1"
+setenv CFR_ROOTDIR              "/gen00/cfr"
+setenv CFR_EXPDIR				$CFR_ROOTDIR/expback
+setenv CFR_EXEDIR				$CFR_ROOTDIR/lib
+setenv CFR_LOGDIR				$CFR_ROOTDIR/log
+setenv CFR_LIBDIR				$CFR_ROOTDIR/lib
+setenv CFR_TMPDIR				$CFR_ROOTDIR/tmp
+setenv CFR_BCKDIR				$CFR_ROOTDIR/files/backup
+setenv CFR_UCSV_FILEDIR			$CFR_ROOTDIR/csv
+setenv CFR_GPA_FILEDIR			$CFR_CFRBT01/toODW
+setenv CFR_GPA_MFILEDIR			$CFR_CFRBT01/toODW
+setenv CFR_GPA_TRGDIR			$CFR_CFRBT01/toODW
+setenv CFR_T21_FILEDIR			$CFR_CFRBT01/fromT21
+setenv CFR_T21_TRGDIR			$CFR_CFRBT01/fromT21
+setenv CFR_ICON_FILEDIR			$CFR_CFRBT01/fromICON
+setenv CFR_ICON_TRGDIR			$CFR_CFRBT01/fromICON
+setenv CFR_ODW_TRGDIR           /kodw/odw01/toCFR
+## 2006.10 ODW-NBL Append
+setenv CFR_NBL_FILEDIR          $CFR_CFRBT01/fromNBL
+setenv CFR_ERR_FILEDIR          "/export/home/gen01/fdt/put/NBL"
+setenv CFR_SQL_DIR				$CFR_ROOTDIR/lib/sql	# ADD_20090228
+setenv CFR_AWK_DIR				$CFR_ROOTDIR/lib/awk	# ADD_20090228
+setenv CFR_XMLFORMAT_DIR		$CFR_ROOTDIR/lib/xml	# ADD_20090228
+setenv CFR_SS_MAKEFILEDIR		$CFR_CFRBT01/toSS		# ADD_20090228
+
+### file
+setenv CFR_USER_CSVFILENAME		"AccDailyData"
+setenv CFR_USER_CSVMFILE		"AccMonthlyData"
+setenv CFR_USER_MCOMCSV			"ComMonthlyData"
+setenv CFR_USER_DCOMCSV			"ComDailyData"
+setenv CFR_T21_TTMFILENAME		"TBDW100.DAT"
+setenv CFR_T21_NAVFILENAME		"TBDW370.DAT"
+setenv CFR_T21_MNYFILENAME		"TBDW360.DAT"
+setenv CFR_T21_FNDFILENAME		"TBDW010.DAT"
+setenv CFR_T21_FMGFILENAME		"TBDW120.DAT"
+setenv CFR_T21_MHOFILENAME		"cfr_M_HOUSHU.csv"
+setenv CFR_T21_CALFILENAME      "TBBMCAL.CSV"
+setenv CFR_T21_DHOFILENAME		"TBDW170.DAT"
+setenv CFR_T21_TTMTRGFNAME		"TBDW100.INF"
+setenv CFR_T21_NAVTRGFNAME		"TBDW370.INF"
+setenv CFR_T21_MNYTRGFNAME		"TBDW360.INF"
+setenv CFR_T21_FNDTRGFNAME		"TBDW010.INF"
+setenv CFR_T21_FMGTRGFNAME		"TBDW120.INF"
+setenv CFR_T21_MHOTRGFNAME		"M_HOUSHU.INF"
+setenv CFR_T21_CALTRGENAME      "TBBMCAL.INF"
+setenv CFR_T21_DHOTRGFNAME		"TBDW170.INF"
+setenv CFR_GPA_NAVFILENAME      "GDP_ODW_JP_zan_file.csv"          #20090909 "GDP_ODW_zan_file.csv"→"GDP_ODW_JP_zan_file.csv"
+setenv CFR_GPAJ_NAVFILENAME		"GDP_ODW_JP_zan_file.csv"
+setenv CFR_GPA_MNYFILENAME		"GDP_ODW_mny_file.csv"
+setenv CFR_GPAJ_MNYFILENAME		"CFRD0061_trade_mv.csv"
+setenv CFR_GPA_MNAVFILENAME		"GDP_ODW_Mzan_file.csv"
+setenv CFR_GPA_ACCFILENAME		"GDP_ODW_acc_file.csv"
+setenv CFR_GPA_DTRGFNAME		"wcfndb.end"
+setenv CFR_GPA_NTRGFNAME		"wcfndx1.end"
+setenv CFR_GPA_DUBFILENAME		"GDP_ODW_sec_file.csv"
+setenv CFR_ICON_NAVFILENAME		"IconDailyNav.csv"
+setenv CFR_ICON_TRGFILENAME		"IconDailyNav.inf"
+setenv CFR_VCRTN_TRGFNAME		"vcrt_n.end"
+setenv CFR_ODW_N1_TRGFNAME		"VW_DT001D_endbt_n.trg"
+setenv CFR_ODW_N2_TRGFNAME		"VW_DT001D01_endbt_n.trg"
+setenv CFR_ODW_N3_TRGFNAME		"VW_DT300D_endbt_n.trg"
+setenv CFR_ODW_N4_TRGFNAME		"VW_DT500R01_endbt_n.trg"
+setenv CFR_ODW_N5_TRGFNAME		"VW_DT601R_endbt_n.trg"
+setenv CFR_ODW_N6_TRGFNAME		"VW_DT400R_endbt_n.trg"
+setenv CFR_ODW_N7_TRGFNAME		"VW_DT200R01_endbt_n.trg"
+setenv CFR_ODW_N8_TRGFNAME		"VW_DT103D_endbt_n.trg"
+## 2006.10 ODW-NBL Append
+setenv CFR_NBL_NAV_TNA          "NBL_NAV_TNA.csv"
+setenv CFR_NBL_SEC_TRA          "NBL_SEC_TRA.csv"
+setenv CFR_NBL_ERR_NAV_TNA		"NBL_NAV_TNA_"
+setenv CFR_NBL_ERR_SEC_TRA		"NBL_SEC_TRA_"
+setenv CFR_NBL_TRG              "nbl-cfr.trg"
+# 2006.11.30 GPA
+setenv CFR_GPA_FILE             "/export/home/cfrbt1/fromGPA/cfr_M_MISYU.tmp"
+setenv CFR_GPA_M_KMN            "/export/home/cfrbt1/fromGPA/cfr_M_MISYU.csv"
+# 2007.09.11
+setenv CFR_GPA_MAEUKE			"/export/home/cfrbt1/fromGPA/cfr_M_MAEUKE.csv"
+setenv CFRD1510_TMPFILE			"CFRD1510.tmp"					# ADD 20090228
+setenv CFRD1510_CSVFILE			"CFRD1510.csv"					# ADD 20090228
+setenv CFRD1510_SQL0GETYOKU		"CFRD1510_00getYokuei.sql"		# ADD 20090228
+setenv CFRD1510_SQL1TRUNTMP		"CFRD1510_01trunTemp.sql"		# ADD 20090228
+setenv CFRD1510_SQL2INSTMP1		"CFRD1510_02insTemp01.sql"		# ADD 20090228
+setenv CFRD1510_SQL3UPDTMP1		"CFRD1510_03updTemp01.sql"		# ADD 20090228
+setenv CFRD1510_SQL4UPDTMP1		"CFRD1510_04updTemp01.sql"		# ADD 20090228
+setenv CFRD1510_SQL5INSTMP2		"CFRD1510_05insTemp02.sql"		# ADD 20090228
+setenv CFRD1510_SQL5INSTMP3		"CFRD1510_05insTemp03.sql"		# ADD 20140218
+setenv CFRD1510_SQL6SELTMP2		"CFRD1510_06selTemp02.sql"		# ADD 20090228
+setenv CFRD1510_SQL7INS_STS		"CFRD1510_07insSSstatus.sql"	# ADD 20090228
+setenv CFRD1510_XMLFORMAT0		"CFRD1510_FormatZero.xml"		# ADD 20090228
+setenv CFRD1510_XMLFORMATS		"CFRD1510_FormatSome.xml"		# ADD 20090228
+setenv CFRD1510_AWKMAKEXMLS		"CFRD1510_MakeSomeXML.awk"		# ADD 20090228
+setenv CFRM9230_SQL				"CFRM9230.sql"					# ADD 20090228
+
+setenv CFRD0050_SQLGETDATA		"CFRD0050getData.sql"   		# ADD 20090525
+setenv CFRD0050_GETPREDATE		"CFRD0050selDate.sql"			# ADD 20090525
+setenv CFRD0050_CSVPREDATE		"CFRD0050preDate.csv"			# ADD 20090525
+setenv CFRD0050_CSVFILE			"CFRD0050.csv"					# ADD 20090525
+setenv CFRD0050_TMPFILE			"CFRD0050.tmp"					# ADD 20090525
+setenv CFRD0051_LOGFILE			"CFRD0051.log"					# ADD 20090525
+
+setenv CFRD0052_SQLInsAka		"CFRD0052InsFixAka.sql"			# ADD 20090925
+setenv CFRD0052_SQLInsKuro		"CFRD0052InsFixKuro.sql"		# ADD 20090925
+setenv CFRD0052_SQLInsBase		"CFRD0052InsBase.sql"			# ADD 20090925
+setenv CFRD0052_SQLTrnFix		"CFRD0052TrnFix.sql"			# ADD 20090925
+
+setenv CFRD0053_SQLUPDAKA       "CFRD0053UpdBaseAka.sql"        # ADD 20090925
+setenv CFRD0053_SQLUPDKURO      "CFRD0053UpdBaseKuro.sql"       # ADD 20090925
+
+setenv CFRD1610_SQLUPDDATE		"CFRD1610updDate.sql"			# ADD 20090525
+
+setenv CFRM1016_SQLGETDATA		"CFRM1016getData.sql"			# ADD 20090601
+setenv CFRM1016_CSVFILE			"CFRM1016.csv"					# ADD 20090601
+setenv CFRM1016_TMPFILE			"CFRM1016.tmp"					# ADD 20090601
+setenv CFRM1016_LOGFILE			"CFRM1016.log"					# ADD 20090601
+
+setenv CFRM1017_SQLGETDATA		"CFRM1017getData.sql"			# ADD 20090601
+setenv CFRM1017_DATAMARGE1		"CFRM1017DataMarge1.sql"		# ADD 20090601
+setenv CFRM1017_DATAMARGE2		"CFRM1017DataMarge2.sql"		# ADD 20090601
+setenv CFRM1017_CSVFILE			"CFRM1017.csv"					# ADD 20090601
+setenv CFRM1017_LOGFILE			"CFRM1017.log"					# ADD 20090601
+setenv CFRM1017_TMPFILE			"GDP_ODW_Mzan_file.tmp"         # ADD 20090601
+setenv CFRM1017_NEWFILE			"GDP_ODW_Mzan_file.csv"         # ADD 20090601
+setenv CFRM1017_BCKFILE			"GDP_ODW_Mzan_file_BKUP.csv"	# ADD 20090601
+
+setenv CFR_MVFILENAME			"CFRD0061_trade_mv.csv"
+setenv CFR_GX_CF_FILENAME		"CFRD0066_gxcf_data.csv"
+setenv CFR_VW_VW_DT400R			"VW_DT400R"
+setenv CFR_VW_VW_DT200R01		"VW_DT200R01"
+setenv CFR_VW_VW_DT103D			"VW_DT103D"
+
+################
+setenv CFR_TMP_DT400R_PRE		"cfr_tmp_dt400r_pre_tbl"
+setenv CFR_TMP_DT400R		"cfr_tmp_dt400r_tbl"
+setenv CFR_TMP_GXCF		"cfr_tmp_gxcf_tbl"
+setenv CFR_TMP_INFLOFL		"cfr_tmp_inflofl_tbl"
+setenv CFR_TMP_SET_CANCEL		"cfr_tmp_set_cancel_tbl"
+setenv CFR_TMP_SINSOUT_BOOK		"cfr_tmp_sinsout_book_tbl"
+setenv CFR_TMP_SINSOUTSETTL		"cfr_tmp_sinsout_settl_tbl"
+setenv CFR_TMP_TRADE_MV		"cfr_tmp_set_cancel_tbl"
+setenv BATCHLOG_NIGHTEND		"BatchLog_NightEndView"
+setenv T_CFASSET_VW		"T_CFAssetTView"
+
+
+setenv CFR_ACCOUNT_TBL			"cfr_account_tbl"
+setenv CFR_SUB_ACCOUNT_TBL		"cfr_sub_account_tbl"
+setenv CFR_DAILY_NAV_TBL		"cfr_daily_nav_tbl"
+setenv CFR_MONTHLY_NAV_TBL	"cfr_monthly_nav_tbl"
+setenv CFR_PRE_BATCH_DATE		"cfr_pre_batch_date_tbl"
+
+
+### Msg
+setenv CFR_MSG_L		3
+
+### Generation
+setenv CFR_GENERATION	5
+
+### File FTP Sleep Sec
+setenv CFR_SLEEPSEC		5
+
+### Base Date
+setenv CFR_BASE_DATE   20130329
+setenv CFR_BASE_MONTH	201303
+
+### etc
+setenv CFR_SS_SAVE_YEAR			2	# ADD 20090228 CFR_SS_STATUS_TBL SAVE_YEAR
+setenv CFR_SS_SAVE_DAY			32	# ADD 20090228 SS_XML SAVE_DAY
+setenv CFR_SS_MAX_NUMBER		9999	# ADD 20090228 SS MAX_NUMBER
+setenv CFRD1510_IN_SYS_CODE		A8	# ADD 20090228 SS_XML for ZeroRec
+
+
+################  GXバッチ処理終了ステータスチェックの環境変数
+setenv CLASS_PATH			"/gen00/cfr/lib"								# 実行クラスパス
+setenv JDBC_HOME			"/usr/jdk/instances/jdk1.6.0/lib"				# JDBCドライバのパス
+setenv DRIVER_PATH			"${JDBC_HOME}/sqljdbc_4.0/jpn/sqljdbc4.jar"		# JDBCドライバのパス
+setenv EXEC_CLASS			"jp.co.nri.common.jdbc.JdbcSelect"				# 実行クラス名
+setenv DB_URL				"172.127.56.25:2025"							# データベースURL
+setenv DB_NAME				"PLGAMMA"										# データベース名
+setenv USER					"plgammamgr"									# ユーザ名
+setenv PASS					"plgammamgr1"									# パスワード
+setenv CFR_MONITOR_CYCLE	5												# GXバッチ処理終了ステータスチェックの監視間隔
+setenv CFR_CHECK_TIMES		5												# GXバッチ処理終了ステータスチェックのチェック回数
+################
+
+#end of cfr_setenv
